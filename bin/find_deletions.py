@@ -1,4 +1,12 @@
 #!/usr/bin/python
+
+'''
+This scipts is called with the samtools mpileup
+coverage file as the first argument. It then finds the missing postitions
+assumes that these represent regions with zero coverage, since no reads
+aligned. It then outputs a file with a list of intervals with zero coverage.
+'''
+
 import sys
 
 filename = sys.argv[1]
